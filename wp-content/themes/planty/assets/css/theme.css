@@ -1,5 +1,9 @@
 /* HEADER */
 
+#masthead .ast-container {
+    padding-right: 0;
+}
+
 #ast-hf-menu-1 a:hover  {
     color: #000000;
     font-weight: 700;
@@ -17,3 +21,60 @@
     background-color: #C02E44;
     font-size: 16px;
 } 
+
+/* INDEX */
+
+
+
+/* FORMULAIRE */
+
+.wpcf7 form label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+}
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.04)
+}
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"] {
+    height: 71px;
+    margin-block: 13px 22px;
+}
+
+.wpcf7 textarea {
+    margin-top: 13px;
+}
+
+.wpcf7 input[type="submit"] {
+    display: block;
+    margin-inline: auto;
+    margin-top: 24px;
+    background-color: #E0B9B4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    padding: 9px 73px;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color: #C02E44;
+}
+
+/* FOOTER */
+
+.ast-hfb-header .site-footer {
+    margin: 0;
+}
+
+.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+    border: none;
+}
+
+.site-below-footer-wrap {
+    padding: 0;
+}
