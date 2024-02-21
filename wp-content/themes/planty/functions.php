@@ -16,8 +16,11 @@ function theme_enqueue_styles()
 
 // Hook pour ajouter un lien Admin dans le menu du header
 add_filter('wp_nav_menu_items', function ($items, $args) {
+    // On applique uniquement au menu principal, celui du header
     if ($args->theme_location == 'primary') {
+        // On vérifie si l'utilisateur est connecté
         if (is_user_logged_in()) {
+            // On ajoute un lien dans la liste qui renvoie vers le dashboard
             $items .= '<li id="menu-item-23" class="menu-item">'
                 . '<a href="' . get_dashboard_url() . '" class="menu-link"> Admin</a>'
                 . '</li>';
