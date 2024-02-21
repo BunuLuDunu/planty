@@ -78,6 +78,10 @@
     background-color: #C02E44;
 }
 
+.elementor-element-4fcf216 .e-con-inner {
+    position: relative;
+}
+
 /* FORMULAIRE DE COMMANDE */
 
 .order-product label {
@@ -86,15 +90,14 @@
 
 .order-products {
     display: flex;
-    justify-content: center;
-    gap: 180px;
+    justify-content: space-around;
+    gap: 1.5rem;
 }
 
 .order-product input.wpcf7-form-control:not([type=submit]) {
-    width: 39px;
+    width: 60px;
     height: 56px;
     border-radius: 0;
-    padding-left: 12px;
 }
 
 .info-form {
@@ -103,7 +106,7 @@
     margin-top: 53px;
 }
 
-.info-form .form-title, .wpcf7 form label {
+.info-form .form-title, .info-form .form-input label {
     color: #FFFFFF;
 }
 
@@ -125,7 +128,7 @@
 }
 
 .wpcf7 form input[type="submit"] {
-    margin-block: 44px 93px;
+    margin-block: 44px 0;
 }
 
 /* FOOTER */
@@ -148,17 +151,7 @@
 
 /* FORMULAIRES */
 
-@media screen and (min-width: 426px) and (max-width: 1023px) {
-    .order-products {
-        gap: 145px;
-    }
-}
-
-
 @media screen and (min-width: 320px) and (max-width: 425px) {
-    .order-products {
-        gap: 33px;
-    }
 
     .info-form {
         display: flex;
